@@ -1,0 +1,80 @@
+
+/* formStyle.css */
+
+/* Container for the entire form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto; /* Center-align the form horizontally */
+    background-image: url("../../assets/backGround_night.jpg");
+    
+  }
+  
+  /* Form container with a white background */
+  .form {
+    background: linear-gradient(black,rgb(53, 52, 52));
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 40rem;
+  }
+  
+  /* Form title */
+  .form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input fields and textarea */
+  .form input[type="text"],
+  .form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: #ccc;
+
+  }
+  
+  /* Textarea style */
+  .form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 0 auto; /* Center-align the submit button horizontally */
+    display: block; /* Make the button a block-level element for centering */
+    width: 50%; /* Adjust the width of the button as needed */
+    margin-top: 20px; /* Add space between the button and the previous element */
+  }
+  
+  /* Hover effect for the submit button */
+  .form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  label{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+label span{
+    width: 50%;
+}
+  

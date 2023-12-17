@@ -1,0 +1,137 @@
+*{
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/background_home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-attachment: fixed;
+    filter: brightness(20%);
+    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+
+}
+
+.visible{
+    opacity: 1;
+    filter: brightness(75%);
+}
+
+.home-container{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.hero-container{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.bigTitle{
+    font-weight: bold;
+    font-size: 10rem;
+    text-shadow: 35px 18px 1px rgba(255, 255, 255, 0.4);
+    color: rgb(238, 14, 96);
+    line-height: 150px;
+    margin-bottom: 2rem;
+}
+
+.briefExplain{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 15%;
+    backdrop-filter:blur(30px);
+    padding: 1.2rem;
+    font-size: 25px;
+    
+}
+
+.navbtn-container{
+    display: flex;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+    align-items:center;
+}
+
+.navbtn{
+    position: relative;
+    padding: 1rem 2rem;
+    transition: 1s;
+    background: linear-gradient(black,rgb(53, 52, 52));
+}
+
+.navbtn:hover{
+    cursor:pointer;
+}
+
+
+.navbtn::before, .navbtn::after{
+    position: absolute;
+    content: '';
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: linear-gradient(45deg, yellow,orange,rgb(255, 72, 0),red,rgb(236, 10, 120),rgb(208, 7, 243),violet,blue,rgb(0, 255, 225),rgb(52, 156, 52),rgb(132, 250, 6));
+    left: -2px;
+    top: -2px;
+    background-size: 400%;
+    z-index: -1;
+    animation: borderAnimation 20s linear infinite;
+    
+
+}
+
+.navbtn:hover{
+    background: linear-gradient(0deg,rgb(168, 167, 167),white);
+    color: black;
+}
+
+@keyframes borderAnimation{
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 400% 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,57 @@
+.header-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: crimson;
+    transition: ease-in-out 0.1s;
+    z-index: 1;
+    position: fixed;
+}
+
+.logoImg{
+    width: 30%;
+    height: 30%;
+}
+
+.header-container ul{
+    display: flex;
+    list-style: square;
+    width: 25%;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.header-container ul li{
+    transition: ease-in-out 1s;
+}
+
+
+.header-container ul li:hover{
+    list-style: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.home a{
+    text-decoration: none;
+    color: white;
+}
+.about a{
+    text-decoration: none;
+    color: white;
+}
+.service a{
+    text-decoration: none;
+    color: white;
+}
+
